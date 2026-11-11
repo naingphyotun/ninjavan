@@ -1,0 +1,265 @@
+.hero-img,
+.mid-banner-img {
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  border-radius: 8px;
+}
+
+.fixed-width-btn {
+  width: 150px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  border-top: 1px solid #dee2e6;
+}
+
+
+/* #SearchBtn:hover{
+  background-color: #E64A19;
+} */
+#exampleModal .modal-content {
+  border-radius: 0; /* Square edges like your screenshot */
+}
+
+#exampleModal .form-control {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+#exampleModal .btn-dark {
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+}
+#vehicleArea .carousel-control-prev-icon,
+#vehicleArea .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+#vehicleArea .card {
+  border-radius: 16px;
+}
+
+.selectVehicleBtn {
+  min-width: 90px;
+}
+/* Allow Add Job modal content to scroll */
+#AddJobModal .modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+/* Prevent the vehicle carousel from becoming too tall */
+#AddJobModal #vehicleCarousel img {
+  max-height: 320px;
+  object-fit: contain;
+}
+.modal { overflow: hidden; }
+#AddJobModal .modal {
+  overflow: visible !important;
+}
+#vehicleArea {
+  max-height: 420px;
+  overflow-y: auto;
+}
+/* ===== Force Add Job modal to scroll on all devices ===== */
+#AddJobModal .modal-dialog {
+  height: 90vh;                 /* makes dialog fit screen */
+}
+
+#AddJobModal .modal-content {
+  max-height: 90vh;             /* prevent content bigger than screen */
+  overflow: hidden;             /* avoid double scroll */
+}
+
+#AddJobModal .modal-body {
+  overflow-y: auto !important;  /* enable scrolling inside */
+  -webkit-overflow-scrolling: touch;
+  max-height: calc(90vh - 140px); /* body scroll area (header+footer space) */
+}
+
+/* Optional: prevent carousel image from swallowing the whole modal */
+#AddJobModal #vehicleCarousel img {
+  max-height: 260px;
+  object-fit: contain;
+}
+/* Stop custom CSS from killing scrolling */
+body.modal-open {
+  overflow: hidden; /* Bootstrap uses this */
+}
+
+#AddJobModal {
+  overflow: hidden !important;
+}
+
+#AddJobModal .modal-dialog-scrollable {
+  overflow: hidden !important;
+}
+#AddJobModal .modal-body {
+  touch-action: pan-y;
+}
+/* ===== Force Add Job modal scrolling (works on laptop + mobile) ===== */
+#AddJobModal .modal-dialog {
+  height: 90vh;
+}
+
+#AddJobModal .modal-content {
+  max-height: 90vh;
+  overflow: hidden; /* prevents double scroll bars */
+}
+
+#AddJobModal .modal-body {
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+  max-height: calc(90vh - 140px); /* header + footer space */
+}
+
+/* Keep vehicle image from taking the whole screen */
+#AddJobModal #vehicleCarousel img {
+  max-height: 260px;
+  object-fit: contain;
+}
+
+/* ===== Force Add Job modal scrolling (all devices) ===== */
+#AddJobModal .modal-dialog {
+  height: 90vh;
+}
+
+#AddJobModal .modal-content {
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+#AddJobModal .modal-body {
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  max-height: calc(90vh - 140px);
+}
+/* ===== Vehicle Inventory Banner ===== */
+.banner {
+  background: url('../img/bg_vehicle.webp') center center no-repeat;
+  background-size: cover;
+  height: 200px;          
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay */
+}
+
+.banner > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Title styling */
+.inventory-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.inventory-subtitle {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  opacity: 0.95;
+}
+
+.site-header{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 16px;
+  border-radius:12px;
+  background:#111827;               /* dark */
+  color:#fff;
+}
+
+.site-thumb{
+  width:76px;
+  height:76px;
+  flex:0 0 76px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#000;
+}
+
+.site-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.site-meta{
+  min-width:0;
+}
+
+.site-title{
+  font-size:1.25rem;
+  font-weight:700;
+  line-height:1.2;
+}
+
+.site-sub{
+  font-size:0.95rem;
+  opacity:0.85;
+  margin-top:4px;
+}
+.vehicle-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.vehicle-title {
+  font-weight: 600;
+}
+
+.vehicle-info {
+  color: #444;
+  font-size: 0.95rem;
+}
+/* ===== Staff Job Board / Tracking Hero ===== */
+.tracking-hero { background: #fff; }
+.tracking-hero-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:22px;
+  border-radius:18px;
+  background: linear-gradient(90deg, #7b7b7b 0%, #bdbdbd 55%, #ffffff 100%);
+  overflow:hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+.tracking-title{ color:#fff; font-weight:800; letter-spacing:.2px; }
+.tracking-sub{ color:rgba(255,255,255,.9); }
+.tracking-hero-img{
+  max-height:120px;
+  width:auto;
+  border-radius:12px;
+  opacity:.95;
+}
+@media (max-width: 768px){
+  .tracking-hero-card{ flex-direction:column; align-items:flex-start; }
+  .tracking-hero-img{ max-height:100px; }
+}
+.selectVehicleBtn {
+    position: relative !important;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
+}
